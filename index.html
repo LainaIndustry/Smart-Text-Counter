@@ -6,7 +6,6 @@
     <title>Word Counter - Count Words & Characters Online</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Header with Navbar -->
@@ -17,10 +16,8 @@
                     <a href="index.html"><i class="fas fa-calculator"></i> WordCounter</a>
                 </div>
                 <div class="nav-menu">
-                    <a href="index.html" class="nav-link active"><i class="fas fa-home"></i> Home</a>
-                    <a href="#" class="nav-link"><i class="fas fa-blog"></i> Blog</a>
-                    <a href="about.html" class="nav-link"><i class="fas fa-info-circle"></i> About</a>
-                    <a href="contact.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="#" class="nav-link">Blog</a>
                 </div>
                 <div class="hamburger">
                     <span class="bar"></span>
@@ -44,175 +41,74 @@
 
         <!-- Main Content -->
         <main class="content">
-            <section class="hero-section">
-                <h1>Smart Text Analysis Tool</h1>
-                <p>Count words, characters, sentences, paragraphs and more in real-time</p>
-            </section>
-
             <section class="counter-section">
+                <h1>Word Counter</h1>
                 <div class="stats-container">
                     <div class="stat-box">
-                        <div class="stat-icon">
-                            <i class="fas fa-font"></i>
-                        </div>
                         <h3>Words</h3>
-                        <span id="word-count" class="count-number">0</span>
+                        <span id="word-count">0</span>
                     </div>
                     <div class="stat-box">
-                        <div class="stat-icon">
-                            <i class="fas fa-keyboard"></i>
-                        </div>
                         <h3>Characters</h3>
-                        <span id="char-count" class="count-number">0</span>
+                        <span id="char-count">0</span>
                     </div>
                     <div class="stat-box">
-                        <div class="stat-icon">
-                            <i class="fas fa-comment"></i>
-                        </div>
                         <h3>Sentences</h3>
-                        <span id="sentence-count" class="count-number">0</span>
+                        <span id="sentence-count">0</span>
                     </div>
                     <div class="stat-box">
-                        <div class="stat-icon">
-                            <i class="fas fa-paragraph"></i>
-                        </div>
                         <h3>Paragraphs</h3>
-                        <span id="paragraph-count" class="count-number">0</span>
+                        <span id="paragraph-count">0</span>
                     </div>
                 </div>
 
                 <div class="editor-container">
                     <div class="toolbar">
-                        <button id="clear-btn" class="tool-btn" title="Clear Text"><i class="fas fa-broom"></i> Clear</button>
-                        <button id="undo-btn" class="tool-btn" title="Undo"><i class="fas fa-undo"></i> Undo</button>
-                        <button id="redo-btn" class="tool-btn" title="Redo"><i class="fas fa-redo"></i> Redo</button>
-                        <div class="toolbar-right">
-                            <button id="copy-btn" class="tool-btn" title="Copy Text"><i class="fas fa-copy"></i></button>
-                            <button id="download-btn" class="tool-btn" title="Download Text"><i class="fas fa-download"></i></button>
-                        </div>
+                        <button id="clear-btn" title="Clear Text"><i class="fas fa-broom"></i> Clear</button>
+                        <button id="undo-btn" title="Undo"><i class="fas fa-undo"></i> Undo</button>
+                        <button id="redo-btn" title="Redo"><i class="fas fa-redo"></i> Redo</button>
                     </div>
-                    <div class="text-area-container">
-                        <textarea id="text-input" placeholder="Start typing or paste your text here..."></textarea>
-                        <div class="text-actions">
-                            <button id="expand-btn" class="action-btn" title="Expand Editor"><i class="fas fa-expand"></i></button>
-                        </div>
-                    </div>
+                    <textarea id="text-input" placeholder="Start typing or paste your text here..."></textarea>
                 </div>
 
                 <div class="details-container">
-                    <h2><i class="fas fa-chart-bar"></i> Text Details</h2>
+                    <h2>Text Details</h2>
                     <div class="details-grid">
                         <div class="detail-item">
-                            <div class="detail-info">
-                                <span class="detail-label"><i class="fas fa-font"></i> Words:</span>
-                                <span class="detail-desc">Total word count</span>
-                            </div>
+                            <span class="detail-label">Words:</span>
                             <span id="detail-words" class="detail-value">0</span>
                         </div>
                         <div class="detail-item">
-                            <div class="detail-info">
-                                <span class="detail-label"><i class="fas fa-keyboard"></i> Characters:</span>
-                                <span class="detail-desc">Including spaces</span>
-                            </div>
+                            <span class="detail-label">Characters:</span>
                             <span id="detail-chars" class="detail-value">0</span>
                         </div>
                         <div class="detail-item">
-                            <div class="detail-info">
-                                <span class="detail-label"><i class="fas fa-comment"></i> Sentences:</span>
-                                <span class="detail-desc">Based on punctuation</span>
-                            </div>
+                            <span class="detail-label">Sentences:</span>
                             <span id="detail-sentences" class="detail-value">0</span>
                         </div>
                         <div class="detail-item">
-                            <div class="detail-info">
-                                <span class="detail-label"><i class="fas fa-paragraph"></i> Paragraphs:</span>
-                                <span class="detail-desc">Text sections</span>
-                            </div>
+                            <span class="detail-label">Paragraphs:</span>
                             <span id="detail-paragraphs" class="detail-value">0</span>
                         </div>
                         <div class="detail-item">
-                            <div class="detail-info">
-                                <span class="detail-label"><i class="fas fa-graduation-cap"></i> Reading Level:</span>
-                                <span class="detail-desc">Approximate grade level</span>
-                            </div>
+                            <span class="detail-label">Reading Level:</span>
                             <span id="reading-level" class="detail-value">-</span>
                         </div>
                         <div class="detail-item">
-                            <div class="detail-info">
-                                <span class="detail-label"><i class="fas fa-book-reader"></i> Reading Time:</span>
-                                <span class="detail-desc">At 225 words/min</span>
-                            </div>
+                            <span class="detail-label">Reading Time:</span>
                             <span id="reading-time" class="detail-value">0s</span>
                         </div>
                         <div class="detail-item">
-                            <div class="detail-info">
-                                <span class="detail-label"><i class="fas fa-microphone"></i> Speaking Time:</span>
-                                <span class="detail-desc">At 150 words/min</span>
-                            </div>
+                            <span class="detail-label">Speaking Time:</span>
                             <span id="speaking-time" class="detail-value">0s</span>
-                        </div>
-                        <div class="detail-item">
-                            <div class="detail-info">
-                                <span class="detail-label"><i class="fas fa-tachometer-alt"></i> Keyword Density:</span>
-                                <span class="detail-desc">Top keywords</span>
-                            </div>
-                            <span id="keyword-density" class="detail-value">-</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="insights-container">
-                    <h2><i class="fas fa-lightbulb"></i> Writing Insights</h2>
-                    <div class="insights-content">
-                        <div class="insight-card">
-                            <div class="insight-icon">
-                                <i class="fas fa-tachometer-alt"></i>
-                            </div>
-                            <h3>Readability Score</h3>
-                            <p>Your text has a <span id="readability-score">good</span> readability score</p>
-                        </div>
-                        <div class="insight-card">
-                            <div class="insight-icon">
-                                <i class="fas fa-balance-scale"></i>
-                            </div>
-                            <h3>Sentence Length</h3>
-                            <p>Average <span id="avg-sentence-length">0</span> words per sentence</p>
-                        </div>
-                        <div class="insight-card">
-                            <div class="insight-icon">
-                                <i class="fas fa-clock"></i>
-                            </div>
-                            <h3>Time Optimization</h3>
-                            <p>Ideal length for <span id="content-type">social media</span></p>
                         </div>
                     </div>
                 </div>
 
                 <div class="about-section">
-                    <h2><i class="fas fa-info-circle"></i> About Smart Text Counter</h2>
+                    <h2>About Smart Text Counter</h2>
                     <p>Our Word Counter is a free online tool that helps you count words, characters, sentences, paragraphs, and more in real-time. It's perfect for writers, students, and professionals who need to meet specific word count requirements.</p>
-                    <div class="features-grid">
-                        <div class="feature-item">
-                            <i class="fas fa-bolt"></i>
-                            <h3>Real-time Analysis</h3>
-                            <p>Get instant statistics as you type</p>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-chart-pie"></i>
-                            <h3>Detailed Reports</h3>
-                            <p>Comprehensive text metrics and insights</p>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-mobile-alt"></i>
-                            <h3>Fully Responsive</h3>
-                            <p>Works on all devices and screen sizes</p>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-lock"></i>
-                            <h3>Privacy Focused</h3>
-                            <p>Your text never leaves your browser</p>
-                        </div>
-                    </div>
+                    <p>We provide detailed statistics about your text to help you improve your writing and meet specific formatting requirements.</p>
                 </div>
             </section>
         </main>
@@ -220,15 +116,6 @@
         <!-- Right Sidebar Ad -->
         <aside class="sidebar right-sidebar">
             <div class="ad-placeholder">Advertisement</div>
-            <div class="quick-tips">
-                <h3><i class="fas fa-lightbulb"></i> Writing Tips</h3>
-                <ul>
-                    <li>Optimal blog post length: 1,500-2,500 words</li>
-                    <li>Email subject lines: 5-7 words work best</li>
-                    <li>Ideal sentence length: 15-20 words</li>
-                    <li>Twitter: 71-100 characters get highest engagement</li>
-                </ul>
-            </div>
         </aside>
     </div>
 
@@ -238,15 +125,6 @@
             <div class="ad-placeholder">Advertisement</div>
         </div>
         <div class="footer-content">
-            <div class="footer-section">
-                <h3>WordCounter</h3>
-                <p>The smart way to analyze and improve your writing</p>
-                <div class="app-download">
-                    <button class="download-btn">
-                        <i class="fab fa-chrome"></i> Chrome Extension
-                    </button>
-                </div>
-            </div>
             <div class="footer-section">
                 <h3>Legal</h3>
                 <ul>
@@ -259,25 +137,15 @@
                 <ul>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">API</a></li>
                 </ul>
             </div>
             <div class="footer-section">
                 <h3>Connect</h3>
                 <div class="social-links">
-                    <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-                </div>
-                <div class="newsletter">
-                    <h4>Subscribe to updates</h4>
-                    <div class="newsletter-form">
-                        <input type="email" placeholder="Your email address">
-                        <button><i class="fas fa-paper-plane"></i></button>
-                    </div>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
             </div>
         </div>
