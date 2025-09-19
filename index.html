@@ -1,1 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Counter - Count Words & Characters Online</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header with Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="index.html"><i class="fas fa-calculator"></i> WordCounter</a>
+                </div>
+                <div class="nav-menu">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="#" class="nav-link">Blog</a>
+                </div>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
 
+    <!-- Banner Ad -->
+    <div class="banner-ad">
+        <div class="ad-placeholder">Advertisement</div>
+    </div>
+
+    <div class="main-container">
+        <!-- Left Sidebar Ad -->
+        <aside class="sidebar left-sidebar">
+            <div class="ad-placeholder">Advertisement</div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content">
+            <section class="counter-section">
+                <h1>Word Counter</h1>
+                <div class="stats-container">
+                    <div class="stat-box">
+                        <h3>Words</h3>
+                        <span id="word-count">0</span>
+                    </div>
+                    <div class="stat-box">
+                        <h3>Characters</h3>
+                        <span id="char-count">0</span>
+                    </div>
+                    <div class="stat-box">
+                        <h3>Sentences</h3>
+                        <span id="sentence-count">0</span>
+                    </div>
+                    <div class="stat-box">
+                        <h3>Paragraphs</h3>
+                        <span id="paragraph-count">0</span>
+                    </div>
+                </div>
+
+                <div class="editor-container">
+                    <div class="toolbar">
+                        <button id="clear-btn" title="Clear Text"><i class="fas fa-broom"></i> Clear</button>
+                        <button id="undo-btn" title="Undo"><i class="fas fa-undo"></i> Undo</button>
+                        <button id="redo-btn" title="Redo"><i class="fas fa-redo"></i> Redo</button>
+                    </div>
+                    <textarea id="text-input" placeholder="Start typing or paste your text here..."></textarea>
+                </div>
+
+                <div class="details-container">
+                    <h2>Text Details</h2>
+                    <div class="details-grid">
+                        <div class="detail-item">
+                            <span class="detail-label">Words:</span>
+                            <span id="detail-words" class="detail-value">0</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Characters:</span>
+                            <span id="detail-chars" class="detail-value">0</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Sentences:</span>
+                            <span id="detail-sentences" class="detail-value">0</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Paragraphs:</span>
+                            <span id="detail-paragraphs" class="detail-value">0</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Reading Level:</span>
+                            <span id="reading-level" class="detail-value">-</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Reading Time:</span>
+                            <span id="reading-time" class="detail-value">0s</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Speaking Time:</span>
+                            <span id="speaking-time" class="detail-value">0s</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-section">
+                    <h2>About Smart Text Counter</h2>
+                    <p>Our Word Counter is a free online tool that helps you count words, characters, sentences, paragraphs, and more in real-time. It's perfect for writers, students, and professionals who need to meet specific word count requirements.</p>
+                    <p>We provide detailed statistics about your text to help you improve your writing and meet specific formatting requirements.</p>
+                </div>
+            </section>
+        </main>
+
+        <!-- Right Sidebar Ad -->
+        <aside class="sidebar right-sidebar">
+            <div class="ad-placeholder">Advertisement</div>
+        </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-ads">
+            <div class="ad-placeholder">Advertisement</div>
+        </div>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 WordCounter. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
