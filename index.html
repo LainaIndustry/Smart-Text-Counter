@@ -3,216 +3,189 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Text Counter - Free Online Text Analysis Tool</title>
-    <meta name="description" content="Free online smart text counter tool. Count words, characters, sentences, paragraphs and get advanced text analysis.">
-    
-    <!-- AdSense Code (Replace with your own) -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX"
-            crossorigin="anonymous"></script>
-    
+    <title>Smart Text Counter - Free Online Character & Word Counter</title>
+    <meta name="description" content="Free online tool to count characters, words, sentences, and paragraphs. Perfect for writers, students, and professionals.">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a href="index.html">Smart Text Counter</a>
-            </div>
-            <div class="nav-menu">
-                <a href="index.html" class="nav-link active">Home</a>
-                <a href="about.html" class="nav-link">About</a>
-                <a href="blog.html" class="nav-link">Blog</a>
-                <a href="help.html" class="nav-link">Help</a>
-                <a href="contact.html" class="nav-link">Contact</a>
-            </div>
-            <div class="nav-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
-    </nav>
-
-    <main class="main-content">
-        <!-- AdSense Banner Ad -->
-        <div class="ad-container">
-            <ins class="adsbygoogle"
-                 style="display:block"
-                 data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
-                 data-ad-slot="XXXXXXXXXX"
-                 data-ad-format="auto"
-                 data-full-width-responsive="true"></ins>
-            <script>
-                 (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
-        </div>
-
-        <section class="hero">
-            <div class="container">
-                <h1>Smart Text Counter</h1>
-                <p>Advanced text analysis tool that counts words, characters, sentences, paragraphs and provides detailed insights about your text.</p>
-            </div>
-        </section>
-
+    <!-- Header -->
+    <header class="header">
         <div class="container">
-            <div class="tool-container">
-                <div class="text-input-section">
-                    <textarea id="textInput" placeholder="Start typing or paste your text here..." rows="10"></textarea>
-                    <div class="text-actions">
-                        <button id="clearBtn" class="btn btn-secondary">Clear Text</button>
-                        <button id="pasteBtn" class="btn btn-secondary">Paste Text</button>
-                        <button id="sampleBtn" class="btn btn-secondary">Load Sample</button>
-                    </div>
+            <div class="header-content">
+                <div class="logo">
+                    <h1><a href="index.html">Smart Text Counter</a></h1>
                 </div>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="help.html">Help</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
 
-                <!-- In-article Ad -->
-                <div class="ad-container">
-                    <ins class="adsbygoogle"
-                         style="display:block; text-align:center;"
-                         data-ad-layout="in-article"
-                         data-ad-format="fluid"
-                         data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
-                         data-ad-slot="XXXXXXXXXX"></ins>
-                    <script>
-                         (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script>
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="hero-content">
+                    <h2>Free Online Text Counter</h2>
+                    <p>Count characters, words, sentences, and paragraphs instantly with our smart text analysis tool.</p>
                 </div>
+            </section>
 
-                <div class="results-section">
-                    <div class="stats-grid">
-                        <div class="stat-card">
-                            <h3>Words</h3>
-                            <span id="wordCount" class="stat-number">0</span>
-                        </div>
-                        <div class="stat-card">
-                            <h3>Characters</h3>
-                            <span id="charCount" class="stat-number">0</span>
-                        </div>
-                        <div class="stat-card">
-                            <h3>Sentences</h3>
-                            <span id="sentenceCount" class="stat-number">0</span>
-                        </div>
-                        <div class="stat-card">
-                            <h3>Paragraphs</h3>
-                            <span id="paragraphCount" class="stat-number">0</span>
-                        </div>
-                    </div>
-
-                    <div class="advanced-stats">
-                        <h3>Advanced Analysis</h3>
-                        <div class="advanced-grid">
-                            <div class="advanced-stat">
-                                <span>Characters (no spaces)</span>
-                                <span id="charNoSpaces">0</span>
-                            </div>
-                            <div class="advanced-stat">
-                                <span>Reading Time</span>
-                                <span id="readingTime">0 min</span>
-                            </div>
-                            <div class="advanced-stat">
-                                <span>Speaking Time</span>
-                                <span id="speakingTime">0 min</span>
-                            </div>
-                            <div class="advanced-stat">
-                                <span>Longest Word</span>
-                                <span id="longestWord">-</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="keyword-section">
-                        <h3>Keyword Density</h3>
-                        <div id="keywordDensity" class="keywords-list">
-                            <p>Start typing to see keyword analysis...</p>
-                        </div>
-                    </div>
+            <!-- Ad Container - Top -->
+            <div class="ad-container ad-top">
+                <div class="ad-placeholder">
+                    <p>Advertisement</p>
+                    <div class="ad-box">AdSense Ad</div>
                 </div>
             </div>
 
-            <!-- Sidebar Ad for larger screens -->
-            <div class="ad-sidebar">
-                <ins class="adsbygoogle"
-                     style="display:block"
-                     data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
-                     data-ad-slot="XXXXXXXXXX"
-                     data-ad-format="auto"
-                     data-full-width-responsive="true"></ins>
-                <script>
-                     (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
+            <!-- Text Counter Tool -->
+            <section class="counter-section">
+                <div class="counter-container">
+                    <div class="input-section">
+                        <textarea id="textInput" placeholder="Paste or type your text here..."></textarea>
+                        <div class="text-controls">
+                            <button id="clearBtn" class="btn btn-secondary">Clear Text</button>
+                            <button id="pasteBtn" class="btn btn-secondary">Paste Text</button>
+                        </div>
+                    </div>
+                    
+                    <div class="results-section">
+                        <div class="counter-results">
+                            <div class="counter-item">
+                                <div class="counter-value" id="charCount">0</div>
+                                <div class="counter-label">Characters</div>
+                            </div>
+                            <div class="counter-item">
+                                <div class="counter-value" id="wordCount">0</div>
+                                <div class="counter-label">Words</div>
+                            </div>
+                            <div class="counter-item">
+                                <div class="counter-value" id="sentenceCount">0</div>
+                                <div class="counter-label">Sentences</div>
+                            </div>
+                            <div class="counter-item">
+                                <div class="counter-value" id="paragraphCount">0</div>
+                                <div class="counter-label">Paragraphs</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Ad Container - Middle -->
+            <div class="ad-container ad-middle">
+                <div class="ad-placeholder">
+                    <p>Advertisement</p>
+                    <div class="ad-box">AdSense Ad</div>
+                </div>
             </div>
 
-            <div class="features-section">
-                <h2>Why Use Our Smart Text Counter?</h2>
+            <!-- Features Section -->
+            <section class="features-section">
+                <h2>Why Use Our Text Counter?</h2>
                 <div class="features-grid">
                     <div class="feature-card">
-                        <h3>📊 Advanced Analytics</h3>
-                        <p>Get detailed insights beyond basic word counting including keyword density and readability metrics.</p>
+                        <div class="feature-icon">⚡</div>
+                        <h3>Fast & Accurate</h3>
+                        <p>Get instant results with precise counting algorithms that handle various text formats.</p>
                     </div>
                     <div class="feature-card">
-                        <h3>⚡ Real-time Results</h3>
-                        <p>See instant updates as you type with no delays or page refreshes required.</p>
+                        <div class="feature-icon">🔒</div>
+                        <h3>Privacy Focused</h3>
+                        <p>Your text is processed locally in your browser - we don't store or transmit your data.</p>
                     </div>
                     <div class="feature-card">
-                        <h3>📱 Mobile Friendly</h3>
+                        <div class="feature-icon">📱</div>
+                        <h3>Mobile Friendly</h3>
                         <p>Works perfectly on all devices - desktop, tablet, and mobile phones.</p>
                     </div>
                     <div class="feature-card">
-                        <h3>🔒 Privacy First</h3>
-                        <p>Your text is processed locally in your browser - no data is sent to our servers.</p>
+                        <div class="feature-icon">🆓</div>
+                        <h3>Completely Free</h3>
+                        <p>No hidden fees, no registration required. Use our tool as much as you want.</p>
                     </div>
                 </div>
+            </section>
+
+            <!-- Ad Container - Bottom -->
+            <div class="ad-container ad-bottom">
+                <div class="ad-placeholder">
+                    <p>Advertisement</p>
+                    <div class="ad-box">AdSense Ad</div>
+                </div>
             </div>
+
+            <!-- Blog Preview Section -->
+            <section class="blog-preview">
+                <h2>Latest from Our Blog</h2>
+                <div class="blog-grid">
+                    <div class="blog-card">
+                        <h3><a href="blog-posts/post1.html">5 Tips for Effective Writing</a></h3>
+                        <p>Learn how to improve your writing skills and make your content more engaging.</p>
+                        <a href="blog-posts/post1.html" class="read-more">Read More</a>
+                    </div>
+                    <div class="blog-card">
+                        <h3><a href="blog-posts/post2.html">Understanding Character Count Limits</a></h3>
+                        <p>Why do platforms impose character limits and how to work within them effectively.</p>
+                        <a href="blog-posts/post2.html" class="read-more">Read More</a>
+                    </div>
+                </div>
+                <div class="blog-link">
+                    <a href="blog.html" class="btn btn-primary">View All Blog Posts</a>
+                </div>
+            </section>
         </div>
     </main>
 
-    <!-- Ad before footer -->
-    <div class="ad-container">
-        <ins class="adsbygoogle"
-             style="display:block"
-             data-ad-format="autorelaxed"
-             data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
-             data-ad-slot="XXXXXXXXXX"></ins>
-        <script>
-             (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-    </div>
-
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-section">
+                <div class="footer-logo">
                     <h3>Smart Text Counter</h3>
-                    <p>Free online text analysis tool for writers, students, and professionals.</p>
+                    <p>Free online text analysis tool</p>
                 </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Legal</h4>
-                    <ul>
-                        <li><a href="legal/privacy-policy.html">Privacy Policy</a></li>
-                        <li><a href="legal/terms.html">Terms of Service</a></li>
-                        <li><a href="legal/disclaimer.html">Disclaimer</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Support</h4>
-                    <ul>
-                        <li><a href="help.html">Help & FAQ</a></li>
-                        <li><a href="embed.html">Embed Tool</a></li>
-                        <li><a href="report-bug.html">Report Bug</a></li>
-                    </ul>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Tools</h4>
+                        <ul>
+                            <li><a href="index.html">Text Counter</a></li>
+                            <li><a href="index.html">Word Counter</a></li>
+                            <li><a href="index.html">Character Counter</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="legal/privacy-policy.html">Privacy Policy</a></li>
+                            <li><a href="legal/terms.html">Terms of Service</a></li>
+                            <li><a href="legal/disclaimer.html">Disclaimer</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Smart Text Counter. All rights reserved.</p>
+                <p>&copy; 2023 Smart Text Counter. All rights reserved.</p>
             </div>
         </div>
     </footer>
