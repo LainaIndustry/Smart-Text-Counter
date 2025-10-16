@@ -1,1 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free online find and replace tool. Find specific text and replace it throughout your document with advanced options.">
+    <title>Find and Replace | Smart Text Counter</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1><a href="../index.html">Smart Text Counter</a></h1>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../blog/index.html">Blog</a></li>
+                    <li class="dropdown">
+                        <a href="#">More Tools <span class="arrow">▼</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="word-character-counter.html">Word & Character Counter</a></li>
+                            <li><a href="case-converter.html">Case Converter</a></li>
+                            <li><a href="alphabetize-list.html">Alphabetize List</a></li>
+                            <li><a href="random-word-generator.html">Random Word Generator</a></li>
+                            <li><a href="character-counter.html">Character Counter</a></li>
+                            <li><a href="clean-text.html">Clean Text</a></li>
+                            <li><a href="find-replace.html">Find and Replace</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
+    <div class="container">
+        <div class="ad-container">
+            <div class="ad-unit">
+                <div class="ad-label">Advertisement</div>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                     data-ad-slot="XXXXXXXXXX"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <main class="main">
+        <div class="container">
+            <div class="tool-header">
+                <h1>Find and Replace</h1>
+                <p>Find specific text and replace it throughout your document with advanced options.</p>
+            </div>
+
+            <section class="tool-panel">
+                <div class="find-replace-options">
+                    <div class="input-group">
+                        <div class="input-field">
+                            <label for="find-text">Find:</label>
+                            <input type="text" id="find-text" placeholder="Text to find...">
+                        </div>
+                        <div class="input-field">
+                            <label for="replace-text">Replace With:</label>
+                            <input type="text" id="replace-text" placeholder="Replacement text...">
+                        </div>
+                    </div>
+                    <div class="option-group">
+                        <label>
+                            <input type="checkbox" id="case-sensitive">
+                            Case Sensitive
+                        </label>
+                        <label>
+                            <input type="checkbox" id="whole-word">
+                            Whole Word Only
+                        </label>
+                    </div>
+                </div>
+
+                <div class="text-areas-container">
+                    <div class="text-area-column">
+                        <label for="text-input">Original Text:</label>
+                        <textarea id="text-input" placeholder="Enter your text here..."></textarea>
+                    </div>
+                    <div class="text-area-column">
+                        <label for="text-output">Result:</label>
+                        <textarea id="text-output" placeholder="Text with replacements will appear here..." readonly></textarea>
+                    </div>
+                </div>
+                <div class="text-actions">
+                    <button id="replace-btn" class="btn">Replace All</button>
+                    <button id="clear-btn" class="btn">Clear All</button>
+                    <button id="copy-btn" class="btn">Copy Result</button>
+                </div>
+                <div class="results-info">
+                    <span id="replacements-count">0 replacements made</span>
+                </div>
+            </section>
+
+            <div class="ad-container">
+                <div class="ad-unit">
+                    <div class="ad-label">Advertisement</div>
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                         data-ad-slot="XXXXXXXXXX"
+                         data-ad-format="auto"
+                         data-full-width-responsive="true"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+            </div>
+
+            <section class="info-section">
+                <h2>About Find and Replace</h2>
+                <p>Find and Replace is a powerful text editing feature that allows you to quickly locate specific text and replace it with alternative text throughout your document. This tool is essential for editing, formatting, and cleaning up text efficiently.</p>
+                
+                <h3>Advanced Replacement Options</h3>
+                <div class="features-grid">
+                    <div class="feature">
+                        <h4>Case Sensitive</h4>
+                        <p>When enabled, the search distinguishes between uppercase and lowercase letters. "Apple" will not match "apple".</p>
+                    </div>
+                    <div class="feature">
+                        <h4>Whole Word Only</h4>
+                        <p>Matches only complete words. Searching for "cat" will not match "category" or "location".</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Smart Text Counter</h3>
+                    <p>Free online text analysis tools for writers, students, and professionals.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../blog/index.html">Blog</a></li>
+                        <li><a href="../pages/about.html">About Us</a></li>
+                        <li><a href="../pages/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Tools</h4>
+                    <ul>
+                        <li><a href="word-character-counter.html">Word & Character Counter</a></li>
+                        <li><a href="case-converter.html">Case Converter</a></li>
+                        <li><a href="alphabetize-list.html">Alphabetize List</a></li>
+                        <li><a href="random-word-generator.html">Random Word Generator</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="../pages/privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="../pages/terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Smart Text Counter. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/find-replace.js"></script>
+</body>
+</html>
