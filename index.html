@@ -1,1 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Smart Text Counter - Free online text analysis tools for writers, students, and professionals. Count words, characters, sentences and more.">
+    <title>Smart Text Counter - Free Online Text Analysis Tools</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- AdSense Code -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1><a href="index.html">Smart Text Counter</a></h1>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog/index.html">Blog</a></li>
+                    <li class="dropdown">
+                        <a href="#">More Tools <span class="arrow">▼</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="tools/word-character-counter.html">Word & Character Counter</a></li>
+                            <li><a href="tools/case-converter.html">Case Converter</a></li>
+                            <li><a href="tools/alphabetize-list.html">Alphabetize List</a></li>
+                            <li><a href="tools/random-word-generator.html">Random Word Generator</a></li>
+                            <li><a href="tools/character-counter.html">Character Counter</a></li>
+                            <li><a href="tools/clean-text.html">Clean Text</a></li>
+                            <li><a href="tools/find-replace.html">Find and Replace</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
+    <!-- AdSense Banner -->
+    <div class="container">
+        <div class="ad-container">
+            <div class="ad-unit">
+                <div class="ad-label">Advertisement</div>
+                <!-- AdSense Code -->
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                     data-ad-slot="XXXXXXXXXX"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content Area -->
+    <main class="main">
+        <div class="container">
+            <!-- Tool Panel -->
+            <section class="tool-panel">
+                <div class="stats-bar">
+                    <div class="stat">
+                        <span class="stat-label">Words</span>
+                        <span class="stat-value" id="word-count">0</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Characters</span>
+                        <span class="stat-value" id="char-count">0</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Characters (no spaces)</span>
+                        <span class="stat-value" id="char-no-spaces-count">0</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Sentences</span>
+                        <span class="stat-value" id="sentence-count">0</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Paragraphs</span>
+                        <span class="stat-value" id="paragraph-count">0</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Reading Time</span>
+                        <span class="stat-value" id="reading-time">0 min</span>
+                    </div>
+                </div>
+
+                <div class="text-area-container">
+                    <textarea id="text-input" placeholder="Start typing or paste your text here..."></textarea>
+                    <div class="text-actions">
+                        <button id="clear-btn" class="btn">Clear Text</button>
+                        <button id="copy-btn" class="btn">Copy Text</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- AdSense In-Article -->
+            <div class="ad-container">
+                <div class="ad-unit">
+                    <div class="ad-label">Advertisement</div>
+                    <!-- AdSense Code -->
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                         data-ad-slot="XXXXXXXXXX"
+                         data-ad-format="auto"
+                         data-full-width-responsive="true"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+            </div>
+
+            <!-- Additional Tools -->
+            <section class="additional-tools">
+                <h2>Additional Text Tools</h2>
+                <div class="tools-grid">
+                    <a href="tools/case-converter.html" class="tool-card">
+                        <h3>Case Converter</h3>
+                        <p>Convert text between uppercase, lowercase, title case and more</p>
+                    </a>
+                    <a href="tools/alphabetize-list.html" class="tool-card">
+                        <h3>Alphabetize List</h3>
+                        <p>Sort lists alphabetically in ascending or descending order</p>
+                    </a>
+                    <a href="tools/clean-text.html" class="tool-card">
+                        <h3>Clean Text</h3>
+                        <p>Remove extra spaces, line breaks and formatting issues</p>
+                    </a>
+                    <a href="tools/find-replace.html" class="tool-card">
+                        <h3>Find & Replace</h3>
+                        <p>Find specific text and replace it throughout your document</p>
+                    </a>
+                </div>
+            </section>
+
+            <!-- What is Smart Text Counter? -->
+            <section class="info-section">
+                <h2>What is Smart Text Counter?</h2>
+                <p>Smart Text Counter is a comprehensive online text analysis tool designed for writers, students, bloggers, and professionals. Our platform provides real-time statistics and insights about your text to help improve writing quality, meet word count requirements, and optimize content for various purposes.</p>
+                
+                <div class="features-grid">
+                    <div class="feature">
+                        <h3>Real-Time Analysis</h3>
+                        <p>Get instant feedback on word count, character count, reading time, and more as you type.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Multiple Tools</h3>
+                        <p>Access a suite of text manipulation tools including case conversion, list sorting, and text cleaning.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Writing Insights</h3>
+                        <p>Understand your writing better with detailed statistics about sentence structure and word usage.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Free & Accessible</h3>
+                        <p>All our tools are completely free to use with no registration required.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Details Panel -->
+            <section class="details-panel">
+                <h2>Detailed Text Statistics</h2>
+                <div class="stats-grid">
+                    <div class="detail-stat">
+                        <span class="detail-label">Unique Words</span>
+                        <span class="detail-value" id="unique-words">0</span>
+                    </div>
+                    <div class="detail-stat">
+                        <span class="detail-label">Average Word Length</span>
+                        <span class="detail-value" id="avg-word-length">0</span>
+                    </div>
+                    <div class="detail-stat">
+                        <span class="detail-label">Average Sentence Length</span>
+                        <span class="detail-value" id="avg-sentence-length">0</span>
+                    </div>
+                    <div class="detail-stat">
+                        <span class="detail-label">Longest Word</span>
+                        <span class="detail-value" id="longest-word">-</span>
+                    </div>
+                    <div class="detail-stat">
+                        <span class="detail-label">Reading Level</span>
+                        <span class="detail-value" id="reading-level">-</span>
+                    </div>
+                    <div class="detail-stat">
+                        <span class="detail-label">Speaking Time</span>
+                        <span class="detail-value" id="speaking-time">0 min</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- AdSense Bottom -->
+            <div class="ad-container">
+                <div class="ad-unit">
+                    <div class="ad-label">Advertisement</div>
+                    <!-- AdSense Code -->
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                         data-ad-slot="XXXXXXXXXX"
+                         data-ad-format="auto"
+                         data-full-width-responsive="true"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+            </div>
+
+            <!-- Blog Preview -->
+            <section class="blog-preview">
+                <h2>Latest from Our Blog</h2>
+                <div class="blog-grid">
+                    <article class="blog-card">
+                        <h3><a href="blog/improve-writing-productivity.html">5 Ways to Improve Your Writing Productivity</a></h3>
+                        <p>Discover effective techniques to boost your writing output while maintaining quality.</p>
+                        <a href="blog/improve-writing-productivity.html" class="read-more">Read More</a>
+                    </article>
+                    <article class="blog-card">
+                        <h3><a href="blog/seo-content-optimization.html">SEO Content Optimization: Beyond Word Count</a></h3>
+                        <p>Learn how to optimize your content for search engines with these proven strategies.</p>
+                        <a href="blog/seo-content-optimization.html" class="read-more">Read More</a>
+                    </article>
+                    <article class="blog-card">
+                        <h3><a href="blog/academic-writing-tips.html">Academic Writing Tips for Students and Researchers</a></h3>
+                        <p>Essential advice for crafting compelling academic papers that meet requirements.</p>
+                        <a href="blog/academic-writing-tips.html" class="read-more">Read More</a>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Smart Text Counter</h3>
+                    <p>Free online text analysis tools for writers, students, and professionals.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="blog/index.html">Blog</a></li>
+                        <li><a href="pages/about.html">About Us</a></li>
+                        <li><a href="pages/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Tools</h4>
+                    <ul>
+                        <li><a href="tools/word-character-counter.html">Word & Character Counter</a></li>
+                        <li><a href="tools/case-converter.html">Case Converter</a></li>
+                        <li><a href="tools/alphabetize-list.html">Alphabetize List</a></li>
+                        <li><a href="tools/random-word-generator.html">Random Word Generator</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="pages/privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="pages/terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Smart Text Counter. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
