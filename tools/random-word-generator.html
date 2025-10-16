@@ -1,1 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free online random word generator. Create random words for creative writing, brainstorming, or vocabulary building.">
+    <title>Random Word Generator | Smart Text Counter</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1><a href="../index.html">Smart Text Counter</a></h1>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../blog/index.html">Blog</a></li>
+                    <li class="dropdown">
+                        <a href="#">More Tools <span class="arrow">▼</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="word-character-counter.html">Word & Character Counter</a></li>
+                            <li><a href="case-converter.html">Case Converter</a></li>
+                            <li><a href="alphabetize-list.html">Alphabetize List</a></li>
+                            <li><a href="random-word-generator.html">Random Word Generator</a></li>
+                            <li><a href="character-counter.html">Character Counter</a></li>
+                            <li><a href="clean-text.html">Clean Text</a></li>
+                            <li><a href="find-replace.html">Find and Replace</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
+    <div class="container">
+        <div class="ad-container">
+            <div class="ad-unit">
+                <div class="ad-label">Advertisement</div>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                     data-ad-slot="XXXXXXXXXX"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <main class="main">
+        <div class="container">
+            <div class="tool-header">
+                <h1>Random Word Generator</h1>
+                <p>Generate random words for creative writing, brainstorming, or vocabulary building.</p>
+            </div>
+
+            <section class="tool-panel">
+                <div class="generator-options">
+                    <div class="option-group">
+                        <div class="option">
+                            <label for="word-count">Number of Words:</label>
+                            <input type="number" id="word-count" min="1" max="100" value="10">
+                        </div>
+                        <div class="option">
+                            <label for="word-length">Word Length:</label>
+                            <select id="word-length">
+                                <option value="any">Any Length</option>
+                                <option value="short">Short (3-5 letters)</option>
+                                <option value="medium">Medium (6-8 letters)</option>
+                                <option value="long">Long (9+ letters)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="option-group">
+                        <div class="option">
+                            <label for="word-type">Word Type:</label>
+                            <select id="word-type">
+                                <option value="any">Any Type</option>
+                                <option value="nouns">Nouns</option>
+                                <option value="verbs">Verbs</option>
+                                <option value="adjectives">Adjectives</option>
+                                <option value="all">All Common Words</option>
+                            </select>
+                        </div>
+                        <div class="option">
+                            <label>
+                                <input type="checkbox" id="unique-words" checked>
+                                Generate Unique Words
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-area-container">
+                    <textarea id="text-output" placeholder="Generated words will appear here..." readonly></textarea>
+                    <div class="text-actions">
+                        <button id="generate-btn" class="btn">Generate Words</button>
+                        <button id="clear-btn" class="btn">Clear</button>
+                        <button id="copy-btn" class="btn">Copy Words</button>
+                    </div>
+                </div>
+            </section>
+
+            <div class="ad-container">
+                <div class="ad-unit">
+                    <div class="ad-label">Advertisement</div>
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                         data-ad-slot="XXXXXXXXXX"
+                         data-ad-format="auto"
+                         data-full-width-responsive="true"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+            </div>
+
+            <section class="info-section">
+                <h2>About Random Word Generator</h2>
+                <p>Our Random Word Generator is a versatile tool designed to spark creativity, aid in brainstorming sessions, and help with vocabulary building. Whether you're a writer looking for inspiration, a student expanding your vocabulary, or a game designer creating content, this tool provides the random words you need.</p>
+                
+                <h3>Common Use Cases</h3>
+                <ul>
+                    <li><strong>Creative Writing:</strong> Generate prompts, character names, or story ideas</li>
+                    <li><strong>Brainstorming:</strong> Spark new ideas and overcome creative blocks</li>
+                    <li><strong>Education:</strong> Create vocabulary lists or spelling practice materials</li>
+                    <li><strong>Game Development:</strong> Generate names for characters, items, or locations</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Smart Text Counter</h3>
+                    <p>Free online text analysis tools for writers, students, and professionals.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../blog/index.html">Blog</a></li>
+                        <li><a href="../pages/about.html">About Us</a></li>
+                        <li><a href="../pages/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Tools</h4>
+                    <ul>
+                        <li><a href="word-character-counter.html">Word & Character Counter</a></li>
+                        <li><a href="case-converter.html">Case Converter</a></li>
+                        <li><a href="alphabetize-list.html">Alphabetize List</a></li>
+                        <li><a href="random-word-generator.html">Random Word Generator</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="../pages/privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="../pages/terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Smart Text Counter. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/word-generator.js"></script>
+</body>
+</html>
