@@ -1,1 +1,144 @@
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .stats-bar {
+        justify-content: space-between;
+    }
+    
+    .stat {
+        min-width: 120px;
+    }
+    
+    .tools-grid,
+    .features-grid,
+    .blog-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
 
+@media (max-width: 768px) {
+    .header .container {
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    .logo {
+        margin-bottom: 10px;
+    }
+    
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .navbar li {
+        margin: 5px 10px;
+    }
+    
+    .stats-bar {
+        padding: 10px;
+    }
+    
+    .stat {
+        min-width: 100px;
+        padding: 5px;
+    }
+    
+    .stat-value {
+        font-size: 20px;
+    }
+    
+    .text-area-container {
+        padding: 15px;
+    }
+    
+    #text-input {
+        height: 250px;
+    }
+    
+    .info-section,
+    .details-panel,
+    .blog-preview {
+        padding: 20px;
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .text-areas-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .input-group {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    .stats-bar {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .stat {
+        width: 100%;
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+        padding: 8px 0;
+        border-bottom: 1px solid #eaeaea;
+    }
+    
+    .stat:last-child {
+        border-bottom: none;
+    }
+    
+    .stat-label,
+    .stat-value {
+        display: inline;
+    }
+    
+    .tools-grid,
+    .features-grid,
+    .blog-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .text-actions {
+        flex-direction: column;
+    }
+    
+    .btn {
+        margin: 5px 0;
+        width: 100%;
+    }
+    
+    .dropdown-menu {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        box-shadow: none;
+        background: transparent;
+        margin-top: 10px;
+    }
+    
+    .dropdown-menu li {
+        margin-bottom: 5px;
+    }
+    
+    .dropdown-menu a {
+        padding: 8px 0;
+        border: none;
+    }
+    
+    .option-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
